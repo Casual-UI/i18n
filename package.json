@@ -1,8 +1,9 @@
 {
   "name": "@casual-ui/i18n",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The I18n package for Casual UI",
   "main": "src/index.ts",
+  "files": ["dist"],
   "scripts": {
     "build": "npx tsc -p ./tsconfig.json"
   },
