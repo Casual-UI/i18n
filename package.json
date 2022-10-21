@@ -1,15 +1,13 @@
 {
   "name": "@casual-ui/i18n",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The I18n package for Casual UI",
-  "main": "src/index.ts",
   "files": ["dist"],
   "scripts": {
     "build": "npx tsc -p ./tsconfig.json"
   },
-  "exports": {
-    ".": "./dist/index.js"
-  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "repository": {
     "url": "https://github.com/Blackman99/casual-ui.git",
     "directory": "/packages/i18n"
