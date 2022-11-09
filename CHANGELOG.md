@@ -1,5 +1,11 @@
 # @casual-ui/i18n
 
+## 0.1.2
+
+### Patch Changes
+
+- c95e9ea: changeset access set to public
+
 ## 0.1.1
 
 ### Patch Changes
