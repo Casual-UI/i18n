@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "build": "npx tsc -p ./tsconfig.json",
-    "release": "npm run build && changeset publish"
+    "release": "npm run build && changeset publish --access public"
   },
   "main": "./dist/index.js",
   "repository": {
