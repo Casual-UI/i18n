@@ -1,5 +1,11 @@
 # @casual-ui/i18n
 
+## 0.1.3
+
+### Patch Changes
+
+- 69928ad: delete type module in package.json
+
 ## 0.1.2
 
 ### Patch Changes
