@@ -8,6 +8,7 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs:
   release:
+    name: Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -17,7 +18,7 @@ jobs:
         with:
           node-version: "16"
       - name: Install Packages
-        - run: npm i
+        run: npm i
       - name: Create release and publish to npm
         id: changesets
         uses: changesets/action@v1
@@ -26,4 +27,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.G_TOKEN }}
           NPM_TOKEN: ${{ secrets.N_TOKEN }}
-      
