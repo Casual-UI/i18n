@@ -2,7 +2,6 @@
   "name": "@casual-ui/i18n",
   "version": "0.1.1",
   "description": "The I18n package for Casual UI",
-  "type": "module",
   "files": [
     "dist"
   ],
