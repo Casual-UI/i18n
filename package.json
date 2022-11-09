@@ -8,7 +8,6 @@
     "build": "npx tsc -p ./tsconfig.json"
   },
   "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "repository": {
     "url": "https://github.com/Blackman99/casual-ui.git",
     "directory": "/packages/i18n"
