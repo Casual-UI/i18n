@@ -3,6 +3,7 @@
     "target": "ESNext",
     "declaration": true,
     "outDir": "dist",
+    "moduleResolution": "node"
   },
   "include": ["src/**/*.ts"]
 }
