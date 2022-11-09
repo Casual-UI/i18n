@@ -1,22 +1,29 @@
-name: Publish package to NPM
+name: Release
+
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+      - name: Setup Node 16
+        uses: actions/setup-node@v3
         with:
           node-version: "16"
-          registry-url: "https://registry.npmjs.org"
-      - run: npm i
-      - run: npm build
-      - run: npm publish
+      - name: Install Packages
+        - run: npm i
+      - name: Create release and publish to npm
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: npm run release
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.N_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.G_TOKEN }}
+          NPM_TOKEN: ${{ secrets.N_TOKEN }}
       
