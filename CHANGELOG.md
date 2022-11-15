@@ -1,5 +1,11 @@
 # @casual-ui/i18n
 
+## 0.1.4
+
+### Patch Changes
+
+- 52b3104: Support for different modules
+
 ## 0.1.3
 
 ### Patch Changes
