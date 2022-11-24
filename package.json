@@ -10,9 +10,12 @@
     "release": "npm run build && changeset publish --access public"
   },
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "import": "./dist/es/index.js",
+      "require": "./dist/umd/index.js"
+    }
   },
-  "types": "./src/index.ts",
+  "types": "./dist/es/index.d.ts",
   "publishConfig": {
     "types": "./dist/index.d.ts",
     "exports": {
