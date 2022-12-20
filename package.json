@@ -16,15 +16,6 @@
     }
   },
   "types": "./dist/es/index.d.ts",
-  "publishConfig": {
-    "types": "./dist/index.d.ts",
-    "exports": {
-      ".": {
-        "import": "./dist/es/index.js",
-        "require": "./dist/umd/index.js"
-      }
-    }
-  },
   "repository": {
     "url": "https://github.com/Casual-UI/i18n.git"
   },
