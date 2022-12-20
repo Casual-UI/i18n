@@ -1,5 +1,11 @@
 # @casual-ui/i18n
 
+## 0.1.5
+
+### Patch Changes
+
+- 89547d5: change exports
+
 ## 0.1.4
 
 ### Patch Changes
