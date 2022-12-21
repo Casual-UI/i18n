@@ -5,6 +5,7 @@
   "files": [
     "dist"
   ],
+  "type": "module",
   "scripts": {
     "build": "tsc -p ./tsconfig.json -m umd --outDir dist/umd && tsc -p ./tsconfig.json -m es6 --outDir dist/es",
     "release": "npm run build && changeset publish --access public"
