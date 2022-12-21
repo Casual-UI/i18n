@@ -1,5 +1,11 @@
 # @casual-ui/i18n
 
+## 0.1.6
+
+### Patch Changes
+
+- 8516770: change type to module
+
 ## 0.1.5
 
 ### Patch Changes
