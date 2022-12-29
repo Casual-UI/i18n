@@ -1,6 +1,6 @@
 {
   "name": "@casual-ui/i18n",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "The I18n package for Casual UI",
   "files": [
     "dist"
