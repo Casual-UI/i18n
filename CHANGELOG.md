@@ -1,5 +1,11 @@
 # @casual-ui/i18n
 
+## 0.1.7
+
+### Patch Changes
+
+- a14456c: explicitly use .js extension
+
 ## 0.1.6
 
 ### Patch Changes
