@@ -1,6 +1,6 @@
-import en from './en'
+import en from './en.js'
 import type { LocaleItem } from './types'
-import zhCN from './zh-CN'
+import zhCN from './zh-CN.js'
 
 type Locale = 'zhCN' | 'en'
 
